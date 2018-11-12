@@ -7,11 +7,14 @@
   box-sizing: border-box;
 }
 
+/* Header Styles */
+
 nav {
   display: flex;
   height: 4rem;
   width: 100%;
-  background-color: #ff6f00;
+  color: #fff;
+  background-color: rgb(255, 143, 0);
   position: fixed;
   justify-content: space-between;
 }
@@ -19,10 +22,25 @@ nav {
 .brand {
   display: flex;
   justify-content: left;
+  flex: 1;
+}
+
+.brand-name {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
   display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #333;
 }
 
 #hero {
@@ -38,7 +56,7 @@ nav {
 }
 
 #hero .container {
-  background: rgb(255, 111, 0, 0.85);
+  background: rgb(255, 143, 0, 0.9);
   padding: 1.5rem;
   border-radius: 5px;
 }
@@ -55,4 +73,19 @@ nav {
 
 .mb {
   margin-bottom: 1rem;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 1rem;
+}
+
+.btn-primary {
+  background: #ffeb3b;
+  color: #333;
+}
+
+.btn-primary:hover {
+  background: #ffd600;
 }
