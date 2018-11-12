@@ -7,14 +7,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #faa433;
+  --secondary-color: #ffeb3b;
+  --secondary-color-faint: rgb(255, 235, 59, 0.9);
+}
+
 /* Header Styles */
 
 nav {
   display: flex;
   height: 4rem;
   width: 100%;
-  color: #fff;
-  background-color: rgb(255, 143, 0);
+  color: #ffeb3b;
+  background-color: var(--primary-color);
   position: fixed;
   justify-content: space-between;
 }
@@ -37,10 +43,10 @@ nav {
   align-items: center;
 }
 
-.nav-links a {
+header a {
   text-decoration: none;
   font-size: 1.1rem;
-  color: #333;
+  color: #ffeb3b;
 }
 
 #hero {
@@ -56,7 +62,8 @@ nav {
 }
 
 #hero .container {
-  background: rgb(255, 143, 0, 0.9);
+  background: var(--secondary-color-faint);
+  color: var(--primary-color);
   padding: 1.5rem;
   border-radius: 5px;
 }
@@ -67,6 +74,10 @@ nav {
 
 #hero h3 {
   font-size: 2rem;
+}
+
+#hero .lead {
+  font-size: 1.4rem;
 }
 
 /* Utility Classes */
