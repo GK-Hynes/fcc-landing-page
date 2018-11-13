@@ -134,6 +134,14 @@ header a {
   justify-content: center;
 }
 
+footer {
+  background: var(--primary-color);
+  color: #333;
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
 /* Utility Classes */
 
 .mt {
