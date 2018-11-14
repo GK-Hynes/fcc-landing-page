@@ -91,7 +91,7 @@ header a {
 }
 
 #about {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   display: flex;
 }
@@ -104,6 +104,38 @@ header a {
 .philosophy {
   padding: 1rem;
   text-align: center;
+}
+
+#pricing {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-grid {
+  max-width: 750px;
+  display: flex;
+  align-items: center;
+}
+
+.plan {
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plan > * {
+  flex: 1 1 100%;
+}
+
+.plan .btn {
+  align-self: flex-end;
 }
 
 #contact {
@@ -129,7 +161,7 @@ header a {
   background-color: #f6f6f6;
 }
 
-.submit {
+.btn-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -140,6 +172,7 @@ footer {
   height: 3rem;
   width: 100%;
   text-align: center;
+  padding: 1rem;
 }
 
 /* Utility Classes */
