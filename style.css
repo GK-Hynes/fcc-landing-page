@@ -12,7 +12,6 @@
 :root {
   --primary-color: #ff8f00;
   --secondary-color: #ffff00;
-  --tertiary-color: hsl(49, 85%, 51%);
 }
 
 .row {
@@ -113,6 +112,9 @@ header a:not(.btn):hover {
   height: 70vh;
   width: 100%;
   display: flex;
+  background: rgb(253, 252, 245);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .info {
@@ -122,12 +124,24 @@ header a:not(.btn):hover {
   justify-content: center;
 }
 
+.info ul {
+  list-style: none;
+}
+
+.info h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
 .philosophy {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   text-align: center;
+  align-items: center;
 }
+
+/* Pricing section */
 
 #pricing {
   height: 100vh;
@@ -192,7 +206,7 @@ header a:not(.btn):hover {
 footer {
   background: var(--primary-color);
   color: #333;
-  height: 3rem;
+  height: 8vh;
   width: 100%;
   text-align: center;
   padding: 1rem;
