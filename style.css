@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
   /* border: 1px solid red; */
 }
 
@@ -34,6 +35,7 @@ nav {
   background-color: var(--primary-color);
   position: fixed;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .brand {
@@ -56,12 +58,17 @@ nav {
 
 header a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #fff;
   padding: 1rem;
 }
 
-header a:hover {
+header a:not(.btn) {
+  height: 100%;
+  padding-top: 1.5rem;
+}
+
+header a:not(.btn):hover {
   border-bottom: 4px solid var(--secondary-color);
 }
 
@@ -99,6 +106,8 @@ header a:hover {
 #hero .lead {
   font-size: 1.4rem;
 }
+
+/* About section */
 
 #about {
   height: 70vh;
