@@ -117,7 +117,7 @@ header a:not(.btn):hover {
 /* About section */
 
 #about {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   background: #fdfcf5;
@@ -164,6 +164,11 @@ header a:not(.btn):hover {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  transition: all 0.3s;
+}
+
+.plan:hover {
+  box-shadow: 0px 24px 38px rgba(0, 0, 0, 0.18);
 }
 
 .card-title {
@@ -198,6 +203,22 @@ header a:not(.btn):hover {
   border: 1px solid red;
 }
 
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.steps p {
+  font-size: 1.3rem;
+}
+
 /* Input styles */
 
 .input-group {
@@ -222,7 +243,7 @@ header a:not(.btn):hover {
 
 footer {
   background: var(--primary-color);
-  color: #333;
+  color: #fff;
   height: 8vh;
   width: 100%;
   text-align: center;
