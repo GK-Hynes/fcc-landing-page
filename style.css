@@ -10,8 +10,10 @@
 }
 
 :root {
-  --primary-color: #ff8f00;
-  --secondary-color: #ffff00;
+  --primary-color: #30cbe8;
+  --secondary-color: #ff9530;
+  --secondary-color-light: #ffb85a;
+  --secondary-color-dark: #ff9200;
 }
 
 a {
@@ -200,7 +202,6 @@ header a:not(.btn):hover {
 #contact {
   height: 50vh;
   width: 100%;
-  border: 1px solid red;
 }
 
 .steps {
@@ -268,11 +269,11 @@ footer {
 }
 
 .btn-primary {
-  background: #ffeb3b;
+  background: var(--secondary-color);
   font-size: 1.1rem;
   color: #333;
 }
 
 .btn-primary:hover {
-  background: #ffd600;
+  background: var(--secondary-color-dark);
 }
