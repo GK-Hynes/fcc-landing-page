@@ -242,6 +242,7 @@ header a:not(.btn):hover {
 .btn-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -251,8 +252,30 @@ footer {
   width: 100%;
   text-align: center;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
+footer > h2 {
+  font-size: 1.2rem;
+}
+
+footer i {
+  font-size: 1.3rem;
+  margin: 0.4rem 0.8rem;
+}
+
+footer i.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+footer i.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+footer i.fa-twitter-square:hover {
+  color: #1da1f2;
+}
 /* Utility Classes */
 
 .mt {
