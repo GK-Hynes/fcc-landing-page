@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
+/* General styles */
+
 * {
   font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.5;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 :root {
@@ -26,14 +28,29 @@ ul {
   list-style: none;
 }
 
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Utility Classes */
+
 .row {
   display: flex;
-  flex-direction: row;
+  height: 100%;
 }
 
 .col-md-1 {
   flex: 1;
   margin: 0 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
 }
 
 /* Header Styles */
@@ -85,8 +102,6 @@ header a:not(.btn):hover {
 
 #hero {
   background: url("img/hero-image.jpg") no-repeat center/cover;
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,10 +136,8 @@ header a:not(.btn):hover {
 /* About section */
 
 #about {
-  height: 80vh;
-  width: 100%;
   display: flex;
-  background: #fdfcf5;
+  background: #e6ecf0;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
@@ -152,8 +165,6 @@ header a:not(.btn):hover {
 /* Pricing section */
 
 #pricing {
-  height: 100vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,12 +213,11 @@ header a:not(.btn):hover {
 /* Contact section */
 
 #contact {
-  height: 70vh;
-  width: 100%;
-  background: #fdfcf5;
+  background: #e6ecf0;
 }
 
 .steps {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,7 +234,9 @@ header a:not(.btn):hover {
 }
 
 .contact-form {
+  flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -281,7 +293,7 @@ footer > h2 {
 
 footer i {
   font-size: 1.3rem;
-  margin: 0.4rem 0.8rem;
+  margin: 0.3rem 0.8rem;
 }
 
 footer i.fa-facebook-square:hover {
@@ -294,15 +306,6 @@ footer i.fa-instagram:hover {
 
 footer i.fa-twitter-square:hover {
   color: #1da1f2;
-}
-/* Utility Classes */
-
-.mt {
-  margin-top: 1rem;
-}
-
-.mb {
-  margin-bottom: 1rem;
 }
 
 /* Buttons */
