@@ -3,12 +3,10 @@
 /* General styles */
 
 * {
-  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.5;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -18,6 +16,12 @@
   --secondary-color: #ff9f30;
   --secondary-color-light: #ffb25a;
   --secondary-color-dark: #ff8900;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  color: #333;
 }
 
 a {
@@ -200,6 +204,18 @@ header a:not(.btn):hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.card-body ul {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.card-body i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
 }
 
 .plan .btn-wrapper {
