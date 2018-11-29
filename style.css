@@ -141,15 +141,28 @@ header a:not(.btn):hover {
 #tours {
   display: flex;
   flex-direction: column;
+  height: 80vh;
 }
 
 .tours-title {
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: 30vh;
   justify-content: center;
   align-items: center;
   background: #f5f8fa;
+}
+
+.tours-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 60%;
+  padding: 2rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  margin-top: -20vh;
 }
 
 .tours-title h2 {
@@ -163,15 +176,11 @@ header a:not(.btn):hover {
 }
 
 .tours-title .btn {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
-.tour-images {
+.tours-images {
   display: flex;
-}
-
-#tours .title {
-  flex: 3;
 }
 
 #tours #tour-1 {
