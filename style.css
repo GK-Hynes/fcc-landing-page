@@ -59,6 +59,10 @@ section {
   margin-bottom: 1rem;
 }
 
+.lead {
+  font-size: 1.4rem;
+}
+
 /* Header Styles */
 
 nav {
@@ -139,10 +143,6 @@ header a.btn {
   font-size: 2rem;
 }
 
-#hero .lead {
-  font-size: 1.4rem;
-}
-
 /* Tours section */
 #tours {
   display: flex;
@@ -211,9 +211,13 @@ header a.btn {
 
 #about {
   display: flex;
-  background: #e6ecf0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+
+#about h3,
+#about h4 {
+  color: var(--primary-color);
 }
 
 .info {
@@ -221,11 +225,22 @@ header a.btn {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: left;
+  padding: 0 1rem;
 }
 
 .info h3 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.info h4 {
+  font-size: 1.4rem;
+}
+
+i.fa-check-circle {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
 }
 
 .research {
@@ -234,6 +249,8 @@ header a.btn {
   padding: 1rem;
   text-align: center;
   align-items: center;
+  text-align: left;
+  padding: 0 1rem;
 }
 
 /* Pricing section */
@@ -283,11 +300,6 @@ header a.btn {
   margin-left: 1rem;
 }
 
-.plan i {
-  margin-right: 0.5rem;
-  color: var(--primary-color);
-}
-
 .plan .btn-wrapper {
   padding: 1rem;
 }
@@ -297,10 +309,6 @@ header a.btn {
 }
 
 /* Contact section */
-
-#contact {
-  background: #e6ecf0;
-}
 
 .steps {
   flex: 1;
