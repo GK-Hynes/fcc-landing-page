@@ -308,6 +308,10 @@ i.fa-check-circle {
   transform: scale(1.1);
 }
 
+.plan span {
+  margin-left: 0.5rem;
+}
+
 /* Contact section */
 
 #contact .steps {
