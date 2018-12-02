@@ -310,7 +310,21 @@ i.fa-check-circle {
 
 /* Contact section */
 
-.steps {
+#contact .steps {
+  text-align: left;
+}
+
+#contact h3 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  font-size: 1.3rem;
+}
+
+.contact-form {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -318,16 +332,7 @@ i.fa-check-circle {
   align-items: center;
 }
 
-.steps h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.steps p {
-  font-size: 1.3rem;
-}
-
-.contact-form {
+.map {
   flex: 1;
   display: flex;
   flex-direction: column;
