@@ -410,6 +410,7 @@ form label {
 
 form input,
 form textarea {
+  font-family: inherit;
   background: #f5f8fa;
 }
 
