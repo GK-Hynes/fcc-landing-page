@@ -42,8 +42,6 @@ section {
   justify-content: center;
 }
 
-/* Utility Classes */
-
 .row {
   display: flex;
   height: 100%;
@@ -92,6 +90,8 @@ section {
   padding: 1rem;
   font-size: 1.1rem;
 }
+
+/* Utility Classes */
 
 .mt {
   margin-top: 1rem;
@@ -379,10 +379,6 @@ i.fa-check-circle {
 }
 
 /* Contact section */
-
-#contact .steps {
-  text-align: left;
-}
 
 #contact h3 {
   color: var(--primary-color);
