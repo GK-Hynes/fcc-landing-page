@@ -164,15 +164,33 @@ header a.btn {
   text-align: center;
 }
 
-#hero .container {
+#hero .container-outer {
   background: var(--primary-color);
   color: #fff;
-  padding: 4rem;
-  transform: skew(30deg);
+  padding: 3rem;
 }
 
-#hero .container > * {
-  transform: skew(-30deg);
+#hero .container-inner {
+  position: relative;
+  border: 2px solid #fff;
+  padding: 2rem;
+}
+
+#hero .container-inner::after {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-top: none;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: none;
+  top: 100%;
+  left: 80%;
+  margin-top: -25px;
+  margin-left: -25px;
+  transform: rotate(45deg);
+  background: var(--primary-color);
 }
 
 #hero h2 {
