@@ -249,26 +249,12 @@ header a.btn {
 
 .tours-images {
   display: flex;
+  width: 100%;
 }
 
-#tours #tour-1 {
-  background: url("https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1543958301/cliffs-of-moher_aub9lb.jpg")
-    no-repeat center/cover;
+.tours-images img {
   height: 50vh;
-  flex: 1;
-}
-
-#tours #tour-2 {
-  background: url("https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1543958693/giants-causeway_dndy7o.jpg")
-    no-repeat center/cover;
-  height: 50vh;
-  flex: 1;
-}
-
-#tours #tour-3 {
-  background: url("https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1543958327/glendalough_yuirzh.jpg")
-    no-repeat center/cover;
-  height: 50vh;
+  min-width: 33%;
   flex: 1;
 }
 
