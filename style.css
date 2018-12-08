@@ -78,8 +78,8 @@ section {
   color: #fff;
   flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .card-body {
@@ -160,7 +160,6 @@ header a.btn {
   background: url("https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1543958365/hero-image_aior6j.jpg")
     no-repeat center/cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -208,12 +207,11 @@ header a.btn {
 #tours {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: auto;
 }
 
 .tours-title {
   display: flex;
-  flex-direction: column;
   height: 30vh;
   justify-content: center;
   align-items: center;
@@ -256,8 +254,7 @@ header a.btn {
 .tours-images img {
   display: block;
   height: auto;
-  min-width: 25%;
-  flex: 1;
+  flex: 1 1 25%;
 }
 
 @media (max-width: 1000px) {
@@ -276,6 +273,7 @@ header a.btn {
   display: flex;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  height: auto;
 }
 
 #about h3,
@@ -461,7 +459,7 @@ footer {
   justify-content: center;
 }
 
-footer > h2 {
+footer h2 {
   font-size: 1.2rem;
 }
 
@@ -470,15 +468,15 @@ footer i {
   margin: 0.3rem 0.8rem;
 }
 
-footer i.fa-facebook-square:hover {
+footer .fa-facebook-square:hover {
   color: #3b5998;
 }
 
-footer i.fa-instagram:hover {
+footer .fa-instagram:hover {
   color: #c32aa3;
 }
 
-footer i.fa-twitter-square:hover {
+footer .fa-twitter-square:hover {
   color: #1da1f2;
 }
 
