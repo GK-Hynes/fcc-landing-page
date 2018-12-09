@@ -152,6 +152,7 @@ nav {
   left: 0;
   background: var(--primary-color-dark);
   opacity: 0.9;
+  padding-top: 70px;
   overflow-x: hidden;
   transition: all 0.5s;
 }
@@ -160,6 +161,11 @@ nav {
   display: block;
   font-size: 1.2rem;
   color: #fff;
+  padding: 0.5rem;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+.side-nav .btn {
   padding: 1rem;
 }
 
@@ -186,12 +192,12 @@ nav a {
   padding: 1rem;
 }
 
-nav a:not(.btn) {
+.nav-link {
   height: 100%;
   padding-top: 2rem;
 }
 
-nav a:not(.btn):hover {
+.nav-link:hover {
   border-bottom: 4px solid var(--secondary-color);
 }
 
