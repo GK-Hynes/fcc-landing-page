@@ -1,12 +1,13 @@
 openButton = document.querySelector(".open-side-menu");
 closeButton = document.querySelector(".close-side-menu");
+sideMenu = document.querySelector("#side-menu");
 
 function openSideMenu() {
-  document.querySelector("#side-menu").style.width = "300px";
+  sideMenu.style.width = "300px";
 }
 
 function closeSideMenu() {
-  document.querySelector("#side-menu").style.width = "0";
+  sideMenu.style.width = "0";
 }
 
 openButton.addEventListener("click", openSideMenu);
