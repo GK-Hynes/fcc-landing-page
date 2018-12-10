@@ -55,7 +55,7 @@ section {
 }
 
 .card {
-  height: 500px;
+  min-height: 500px;
   max-width: 380px;
   margin: 30px;
   text-align: center;
@@ -164,7 +164,7 @@ nav a.btn {
 .side-nav {
   height: 100vh;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   top: 0;
   left: 0;
@@ -315,7 +315,7 @@ nav a.btn {
   flex: 1 1 25%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .tours-images {
     flex-wrap: wrap;
   }
@@ -331,7 +331,7 @@ nav a.btn {
   display: flex;
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  height: auto;
+  height: 100vh;
 }
 
 #about h3,
@@ -370,6 +370,22 @@ i.fa-check-circle {
   align-items: center;
   text-align: left;
   padding: 0 1rem;
+}
+
+@media (max-width: 1050px) {
+  #about {
+    height: auto;
+  }
+  #about .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 590px) {
+  #about .about-video {
+    width: 480px;
+    height: 270px;
+  }
 }
 
 /* Testimonials section */
@@ -412,6 +428,18 @@ i.fa-check-circle {
   text-align: justify;
 }
 
+@media (max-width: 1000px) {
+  #testimonials {
+    height: auto;
+  }
+  #testimonials .row {
+    flex-direction: column;
+  }
+  #testimonials .card {
+    margin-top: 80px;
+  }
+}
+
 /* Pricing section */
 
 #pricing {
@@ -435,6 +463,13 @@ i.fa-check-circle {
 
 .plan span {
   margin-left: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  #pricing {
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 /* Contact section */
@@ -463,6 +498,23 @@ i.fa-check-circle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  #contact {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  #contact .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 610px) {
+  #contact .contact-map {
+    width: 450px;
+    height: 325px;
+  }
 }
 
 /* Input styles */
