@@ -215,6 +215,12 @@ nav a.btn {
   }
 }
 
+@media (max-width: 510px) {
+  nav h1 {
+    font-size: 1.2rem;
+  }
+}
+
 #hero {
   background: url("https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1543958365/hero-image_aior6j.jpg")
     no-repeat center/cover;
@@ -351,6 +357,7 @@ nav a.btn {
   display: block;
   height: auto;
   flex: 1 1 25%;
+  min-width: 25%;
 }
 
 @media (max-width: 900px) {
@@ -364,7 +371,27 @@ nav a.btn {
   }
 
   .tours-images img {
-    min-width: 300px;
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 730px) {
+  .tours-title {
+    text-align: center;
+  }
+
+  .tours-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .tours-title p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tours-images img {
+    min-width: 100%;
   }
 }
 
