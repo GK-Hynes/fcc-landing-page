@@ -604,7 +604,7 @@ form textarea {
 footer {
   background: var(--primary-color);
   color: #fff;
-  height: 8vh;
+  min-height: 8vh;
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -634,8 +634,13 @@ footer .fa-twitter-square:hover {
 }
 
 @media (max-width: 400px) {
-  display: flex;
-  flex-direction: column;
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer h2 {
+    padding: 0.5rem;
+  }
 }
 
 /* Buttons */
