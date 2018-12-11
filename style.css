@@ -445,6 +445,7 @@ i.fa-check-circle {
 @media (max-width: 1050px) {
   #about {
     height: auto;
+    padding: 4rem 1rem;
   }
   #about .row {
     flex-direction: column;
@@ -472,7 +473,7 @@ i.fa-check-circle {
 
 #testimonials h2 {
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 2.5rem;
 }
 
@@ -501,6 +502,7 @@ i.fa-check-circle {
 @media (max-width: 1000px) {
   #testimonials {
     height: auto;
+    margin-top: 4rem;
   }
   #testimonials .row {
     flex-direction: column;
@@ -512,10 +514,10 @@ i.fa-check-circle {
 
 /* Pricing section */
 
-#pricing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#pricing .section-title h2 {
+  color: var(--primary-color);
+  margin: 2rem;
+  font-size: 2.5rem;
 }
 
 .plan ul {
@@ -544,6 +546,10 @@ i.fa-check-circle {
 
 /* Contact section */
 
+#contact {
+  margin-top: 2rem;
+}
+
 #contact h3 {
   color: var(--primary-color);
   font-size: 2rem;
@@ -562,7 +568,8 @@ i.fa-check-circle {
   align-items: center;
 }
 
-.map {
+.contact-map {
+  margin: 2rem 1rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -581,7 +588,7 @@ i.fa-check-circle {
 }
 
 @media (max-width: 610px) {
-  #contact .contact-map {
+  #contact .map {
     width: 450px;
     height: 325px;
   }
