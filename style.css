@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -78,7 +78,6 @@ section {
 }
 
 .card-body {
-  background: pink;
   padding: 1rem;
   font-size: 1.1rem;
   display: flex;
