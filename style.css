@@ -444,6 +444,13 @@ i.fa-check-circle {
   }
 }
 
+@media (max-width: 660px) {
+  #about .about-video {
+    width: 480;
+    height: 270;
+  }
+}
+
 @media (max-width: 590px) {
   #about .about-video {
     width: 480px;
@@ -592,10 +599,10 @@ i.fa-check-circle {
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 670px) {
   #contact .map {
-    width: 450px;
-    height: 325px;
+    width: 400px;
+    height: 300px;
   }
 }
 
