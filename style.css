@@ -348,10 +348,8 @@ nav a.btn {
 }
 
 .tours-images img {
-  display: block;
-  height: auto;
   flex: 1 1 25%;
-  min-width: 25%;
+  height: auto;
 }
 
 @media (max-width: 900px) {
@@ -455,7 +453,17 @@ i.fa-check-circle {
 
 /* Testimonials section */
 
-#testimonials .testimonial-img {
+#testimonials h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.testimonial {
+  margin: 0.5rem;
+}
+
+.testimonial .testimonial-img {
   position: relative;
   height: 160px;
   width: 160px;
@@ -465,30 +473,24 @@ i.fa-check-circle {
   border: 6px solid var(--primary-color);
 }
 
-#testimonials h2 {
-  color: var(--primary-color);
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-}
-
-#testimonials h3 {
+.testimonial h3 {
   color: var(--primary-color);
   margin: 0.5rem;
 }
 
-#testimonials h4 {
+.testimonial h4 {
   margin: 0.5rem;
 }
 
-#testimonials .stars {
+.testimonial .stars {
   margin-bottom: 1rem;
 }
 
-#testimonials i {
+.testimonial i {
   color: #ff8900;
 }
 
-#testimonials p {
+.testimonial p {
   margin: 0 1.5rem;
   text-align: justify;
 }
@@ -508,6 +510,11 @@ i.fa-check-circle {
 
 /* Pricing section */
 
+#pricing {
+  width: 100%;
+  height: auto;
+}
+
 #pricing .section-title h2 {
   color: var(--primary-color);
   margin: 2rem;
@@ -516,7 +523,11 @@ i.fa-check-circle {
 
 .plan ul {
   text-align: left;
-  margin: 1rem;
+  margin: 2rem;
+}
+
+.plan span {
+  margin-right: 0.5rem;
 }
 
 .plan .btn-wrapper {
@@ -528,13 +539,12 @@ i.fa-check-circle {
   transform: scale(1.1);
 }
 
-.plan span {
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   #pricing {
     height: auto;
+    flex-direction: column;
+  }
+  #pricing .row {
     flex-direction: column;
   }
 }
