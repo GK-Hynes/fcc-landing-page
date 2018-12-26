@@ -344,12 +344,11 @@ nav a.btn {
 
 .tours-images {
   display: flex;
-  width: 100%;
 }
 
 .tours-images img {
-  flex: 1 1 25%;
-  height: auto;
+  flex: 1;
+  height: 250px;
 }
 
 @media (max-width: 900px) {
@@ -543,7 +542,7 @@ i.fa-check-circle {
 }
 
 .plan-2 {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @media (max-width: 1070px) {
