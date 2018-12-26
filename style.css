@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
+/* ============== */
 /* General styles */
+/* ============== */
 
 * {
   margin: 0;
@@ -8,6 +10,10 @@
   box-sizing: border-box;
   /* border: 1px solid red; */
 }
+
+/* .debug {
+  border: 1px solid red;
+} */
 
 :root {
   --primary-color: #35aee9;
@@ -52,6 +58,8 @@ section {
 .col-md-1 {
   flex: 1;
   margin: 0 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -85,7 +93,9 @@ section {
   justify-content: space-between;
 }
 
+/* =============== */
 /* Utility Classes */
+/* =============== */
 
 .mt {
   margin-top: 1rem;
@@ -99,7 +109,9 @@ section {
   font-size: 1.4rem;
 }
 
+/* ============= */
 /* Header Styles */
+/* ============= */
 
 nav {
   display: flex;
@@ -299,7 +311,10 @@ nav a.btn {
   }
 }
 
+/* ============= */
 /* Tours section */
+/* ============= */
+
 #tours {
   display: flex;
   flex-direction: column;
@@ -342,13 +357,19 @@ nav a.btn {
   margin-top: 1.5rem;
 }
 
-.tours-images {
+.tour-images {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.tours-images img {
-  flex: 1;
-  height: 250px;
+.tour-images .tour-img {
+  flex: 1 1 25%;
+}
+
+.tour-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 900px) {
@@ -357,12 +378,8 @@ nav a.btn {
     font-size: 2rem;
   }
 
-  .tours-images {
-    flex-wrap: wrap;
-  }
-
-  .tours-images img {
-    min-width: 50%;
+  .tour-images .tour-img {
+    flex: 1 1 50%;
   }
 }
 
@@ -381,12 +398,14 @@ nav a.btn {
 }
 
 @media (max-width: 600px) {
-  .tours-images img {
-    min-width: 100%;
+  .tour-images .tour-img {
+    flex: 1 1 100%;
   }
 }
 
+/* ============= */
 /* About section */
+/* ============= */
 
 #about {
   display: flex;
@@ -401,12 +420,13 @@ nav a.btn {
 }
 
 .info {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: left;
-  padding: 0 2rem;
+  padding: 4rem 2rem;
 }
 
 .info h3 {
@@ -433,6 +453,10 @@ i.fa-check-circle {
   padding: 0 1rem;
 }
 
+.p--narrow {
+  margin: 1rem;
+}
+
 @media (max-width: 1050px) {
   #about {
     height: auto;
@@ -457,7 +481,9 @@ i.fa-check-circle {
   }
 }
 
+/* ==================== */
 /* Testimonials section */
+/* ==================== */
 
 #testimonials h2 {
   color: var(--primary-color);
@@ -514,7 +540,9 @@ i.fa-check-circle {
   }
 }
 
+/* =============== */
 /* Pricing section */
+/* =============== */
 
 #pricing {
   width: 100%;
@@ -555,7 +583,9 @@ i.fa-check-circle {
   }
 }
 
+/* =============== */
 /* Contact section */
+/* =============== */
 
 #contact {
   margin-top: 2rem;
@@ -605,7 +635,9 @@ i.fa-check-circle {
   }
 }
 
+/* ============ */
 /* Input styles */
+/* ============ */
 
 form {
   width: 80%;
@@ -644,7 +676,9 @@ form .btn-wrapper {
   align-items: center;
 }
 
+/* ============= */
 /* Footer styles */
+/* ============= */
 
 footer {
   background: var(--primary-color);
@@ -688,7 +722,9 @@ footer .fa-twitter-square:hover {
   }
 }
 
+/* ======= */
 /* Buttons */
+/* ======= */
 
 .btn {
   padding: 1rem 2rem;
