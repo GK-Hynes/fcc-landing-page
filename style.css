@@ -628,6 +628,30 @@ i.fa-check-circle {
   align-items: center;
 }
 
+.map-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.map-wrapper::before {
+  display: block;
+  content: "";
+  padding-top: 75%;
+}
+
+.map-wrapper .map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @media (max-width: 1000px) {
   #contact {
     height: auto;
@@ -638,12 +662,12 @@ i.fa-check-circle {
   }
 }
 
-@media (max-width: 670px) {
+/* @media (max-width: 670px) {
   #contact .map {
     width: 400px;
     height: 300px;
   }
-}
+} */
 
 /* ============ */
 /* Input styles */
