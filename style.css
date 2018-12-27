@@ -774,3 +774,7 @@ footer .fa-twitter-square:hover {
 .btn-primary:hover {
   background: var(--secondary-color-dark);
 }
+
+.btn-cta {
+  display: inline-block;
+}
