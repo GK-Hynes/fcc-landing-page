@@ -121,7 +121,6 @@ section {
 
 nav {
   display: flex;
-  height: 12vh;
   width: 100%;
   color: #fff;
   background-color: var(--primary-color);
@@ -135,6 +134,11 @@ nav {
   display: flex;
   justify-content: left;
   flex: 1;
+}
+
+.brand-logo {
+  height: 12vh;
+  margin-left: 1rem;
 }
 
 .brand-name {
