@@ -89,6 +89,7 @@ section {
   color: #fff;
   flex: 1;
   padding: 1rem;
+  border-radius: 15px 15px 0 0;
 }
 
 .card-body {
@@ -127,7 +128,7 @@ section {
   position: fixed;
   justify-content: space-evenly;
   z-index: 2;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
 }
 
 .navbar__branding {
@@ -545,6 +546,36 @@ i.fa-check-circle {
   text-align: justify;
 }
 
+#new-testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-testimonial {
+  width: 600px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  border-radius: 15px;
+}
+
+.new-testimonial img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.testimonial__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__body {
+  padding: 1rem;
+}
+
 @media (max-width: 1000px) {
   #testimonials {
     height: auto;
@@ -564,7 +595,6 @@ i.fa-check-circle {
 
 #pricing {
   width: 100%;
-  height: auto;
 }
 
 #pricing .section-title h2 {
@@ -629,7 +659,7 @@ i.fa-check-circle {
 
 .contact-map {
   text-align: center;
-  margin-top: 2rem 0;
+  margin-top: 2rem;
 }
 
 .map-top-content {
@@ -712,7 +742,7 @@ footer {
   color: #fff;
   min-height: 8vh;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-evenly;
 }
