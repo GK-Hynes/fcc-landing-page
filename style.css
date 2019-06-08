@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
 
 /* ============== */
 /* General styles */
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   line-height: 1.5;
   color: #333;
 }
@@ -138,7 +138,8 @@ section {
 
 .navbar__branding-logo {
   height: 12vh;
-  margin-left: 1rem;
+  margin: 0 1rem 0 2rem;
+  padding-top: 0.4rem;
 }
 
 .navbar__branding-name {
@@ -155,7 +156,8 @@ section {
 
 .navbar__link {
   height: 100%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #fff;
   padding: 2rem 1rem 1rem 1rem;
 }
@@ -341,7 +343,7 @@ section {
   justify-content: center;
   align-items: center;
   background: #fff;
-  max-width: 910px;
+  max-width: 950px;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
@@ -761,7 +763,7 @@ footer .fa-twitter-square:hover {
 .btn-primary {
   background: var(--secondary-color);
   font-size: 1.1rem;
-  color: #333;
+  color: #fff;
 }
 
 .btn-primary:hover {
