@@ -17,10 +17,6 @@ html {
   /* border: 1px solid red; */
 }
 
-/* .debug {
-  border: 1px solid red;
-} */
-
 :root {
   --primary-color: #35aee9;
   --primary-color-light: #5cbeee;
@@ -504,89 +500,90 @@ i.fa-check-circle {
 /* Testimonials section */
 /* ==================== */
 
-#testimonials h2 {
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonials__title {
+  width: 100%;
+  text-align: center;
+}
+
+.testimonials__heading {
   color: var(--primary-color);
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
+.testimonials__body {
+  display: flex;
+}
+
+.testimonials__image-wrapper {
+  flex: 1;
+}
+
+.testimonials__image {
+  width: 100%;
+}
+
+.testimonials__cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 .testimonial {
-  margin: 0.5rem;
+  max-width: 600px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  border-radius: 15px;
+  margin: 2rem;
 }
 
-.testimonial .testimonial-img {
-  position: relative;
-  height: 160px;
-  width: 160px;
-  border-radius: 80px;
-  margin: 0 auto -50px;
-  top: -80px;
-  border: 6px solid var(--primary-color);
-}
-
-.testimonial h3 {
-  color: var(--primary-color);
-  margin: 0.5rem;
-}
-
-.testimonial h4 {
-  margin: 0.5rem;
-}
-
-.testimonial .stars {
-  margin-bottom: 1rem;
-}
-
-.testimonial i {
-  color: #ff8900;
-}
-
-.testimonial p {
-  margin: 0 1.5rem;
-  text-align: justify;
-}
-
-#new-testimonial {
+.testimonial__image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.new-testimonial {
-  width: 600px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
-  display: flex;
-  border-radius: 15px;
-}
-
-.new-testimonial img {
+.testimonial__image {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   margin: 1rem;
 }
 
-.testimonial__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.testimonial__image::after {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .testimonial__body {
   padding: 1rem;
 }
 
-@media (max-width: 1000px) {
-  #testimonials {
-    height: auto;
-    margin-top: 4rem;
-  }
-  #testimonials .row {
-    flex-direction: column;
-  }
-  #testimonials .card {
-    margin-top: 80px;
-  }
+.testimonial__quote {
+  color: var(--primary-color);
+}
+
+.testimonial__name,
+.testimonial__country {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.testimonial__name {
+  color: var(--primary-color);
 }
 
 /* =============== */
